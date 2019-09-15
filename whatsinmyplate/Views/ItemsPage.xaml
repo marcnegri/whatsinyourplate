@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="whatsinmyplate.Views.ItemsPage"
+             xmlns:custom="clr-namespace:whatsinmyplate.Components;assembly=whatsinmyplate"
              Title="{Binding Title}"
              x:Name="BrowseItemsPage">
 
@@ -14,6 +15,7 @@
 
     <StackLayout>
         <ListView x:Name="ItemsListView"
+                SeparatorVisibility="None"
                 ItemsSource="{Binding Items}"
                 VerticalOptions="FillAndExpand"
                 HasUnevenRows="true"
@@ -34,20 +36,7 @@
             </d:ListView.ItemsSource>
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Padding="10">
-                            <Label Text="{Binding Text}" 
-                                d:Text="{Binding .}"
-                                LineBreakMode="NoWrap" 
-                                Style="{DynamicResource ListItemTextStyle}" 
-                                FontSize="16" />
-                            <Label Text="{Binding Description}" 
-                                d:Text="Item description"
-                                LineBreakMode="NoWrap"
-                                Style="{DynamicResource ListItemDetailTextStyle}"
-                                FontSize="13" />
-                        </StackLayout>
-                    </ViewCell>
+                    <custom:RestaurantsViewCell />
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>

@@ -6,6 +6,6 @@
              mc:Ignorable="d"
              x:Class="whatsinmyplate.App">
     <Application.Resources>
-        
+        <!--StyleSheet Source="/Assets/styles.css" /-->     
     </Application.Resources>
 </Application>

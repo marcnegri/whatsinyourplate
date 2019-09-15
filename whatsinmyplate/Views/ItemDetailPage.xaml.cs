@@ -5,6 +5,7 @@ using Xamarin.Forms.Xaml;
 
 using whatsinmyplate.Models;
 using whatsinmyplate.ViewModels;
+using System.Collections.Generic;
 
 namespace whatsinmyplate.Views
 {
@@ -19,21 +20,32 @@ namespace whatsinmyplate.Views
         {
             InitializeComponent();
 
-            BindingContext = this.viewModel = viewModel;
+            //BindingContext = this.viewModel = viewModel;
+            List<Item> lst = new List<Item>
+            {
+
+                new Item(),
+                new Item(),
+                new Item(),
+                new Item(),
+                new Item()
+            };
+
+            ItemsListView.ItemsSource = lst;
         }
 
         public ItemDetailPage()
         {
             InitializeComponent();
 
-            var item = new Item
+            List<Item> lst = new List<Item>
             {
-                Text = "Item 1",
-                Description = "This is an item description."
+
+                new Item(),
+                new Item()
             };
 
-            viewModel = new ItemDetailViewModel(item);
-            BindingContext = viewModel;
+            ItemsListView.ItemsSource = lst;
         }
     }
 }

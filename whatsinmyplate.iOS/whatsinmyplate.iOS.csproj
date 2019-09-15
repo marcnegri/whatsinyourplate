@@ -119,6 +119,10 @@
     <BundleResource Include="Resources\xamarin_logo%402x.png" />
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
     <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
+    <BundleResource Include="Resources\background.jpg" />
+    <BundleResource Include="Resources\review.png" />
+    <BundleResource Include="Resources\soupe.jpg" />
+    <BundleResource Include="Resources\location.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

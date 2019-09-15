@@ -17,7 +17,7 @@ namespace whatsinmyplate.ViewModels
 
         public ItemsViewModel()
         {
-            Title = "Browse";
+            Title = "What's in my plate";
             Items = new ObservableCollection<Item>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 

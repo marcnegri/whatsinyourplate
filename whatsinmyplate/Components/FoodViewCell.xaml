@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="whatsinmyplate.Components.FoodViewCell">
+    <Frame BorderColor="#d3d3d3" HorizontalOptions="FillAndExpand" HasShadow="False" Margin="10,10,10,10" Padding="0" VerticalOptions="Start">
+<Grid x:Name="grdSkill"
+      RowSpacing="0"
+      ColumnSpacing="0"
+      VerticalOptions="FillAndExpand"
+      HorizontalOptions="FillAndExpand">
+    <Grid.RowDefinitions>
+        <RowDefinition Height="40" />
+        <RowDefinition Height="30" />
+        <RowDefinition Height="auto" />
+        <RowDefinition Height="40" />
+
+
+    </Grid.RowDefinitions>
+    <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="120" />
+        <ColumnDefinition Width="*" />
+
+    </Grid.ColumnDefinitions>
+     <Image Source="soupe.jpg" Grid.Row="0" Grid.Column="0" Grid.RowSpan="5" Grid.ColumnSpan="1" Aspect="AspectFill"/>
+    <Label HorizontalTextAlignment="Center" Margin="8, 8, 8, 0" FontSize="Subtitle" FontAttributes="Bold" Text="Soupe" Grid.Row="0" Grid.Column="1" />
+    <Label HorizontalTextAlignment="Center" Margin="8, 8, 8, 0" FontSize="Subtitle" Text="Soupe chinoise" TextColor="Gray" Grid.Row="1" Grid.Column="1" />
+    <Label HorizontalTextAlignment="End" Margin="10, 10, 10, 2" FontSize="Large" Text="10€" Grid.Row="4" Grid.Column="1" />
+    </Grid>
+        </Frame>
+</ViewCell>
