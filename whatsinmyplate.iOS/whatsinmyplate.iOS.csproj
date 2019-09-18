@@ -123,6 +123,8 @@
     <BundleResource Include="Resources\review.png" />
     <BundleResource Include="Resources\soupe.jpg" />
     <BundleResource Include="Resources\location.png" />
+    <BundleResource Include="Resources\profil.png" />
+    <BundleResource Include="Resources\heart.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

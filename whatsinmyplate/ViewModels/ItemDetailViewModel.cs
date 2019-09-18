@@ -9,13 +9,13 @@ namespace whatsinmyplate.ViewModels
 {
     public class ItemDetailViewModel : BaseViewModel
     {
-        public Item Item { get; set; }
-        public ObservableCollection<Item> Items { get; set; }
+        public Restaurant Item { get; set; }
+        public ObservableCollection<Restaurant> Items { get; set; }
         public Command LoadItemsCommand { get; set; }
 
-        public ItemDetailViewModel(Item item = null)
+        public ItemDetailViewModel(Restaurant item = null)
         {
-            Title = item?.Text;
+            Title = item?.Name;
             Item = item;
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
         }

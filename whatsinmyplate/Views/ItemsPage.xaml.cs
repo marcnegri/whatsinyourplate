@@ -29,7 +29,7 @@ namespace whatsinmyplate.Views
 
         async void OnItemSelected(object sender, SelectedItemChangedEventArgs args)
         {
-            var item = args.SelectedItem as Item;
+            var item = args.SelectedItem as Restaurant;
             if (item == null)
                 return;
 

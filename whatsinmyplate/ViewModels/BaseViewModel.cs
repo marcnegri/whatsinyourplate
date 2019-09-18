@@ -12,7 +12,7 @@ namespace whatsinmyplate.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        public IDataStore<Item> DataStore => DependencyService.Get<IDataStore<Item>>() ?? new MockDataStore();
+        public IDataStore<Restaurant> DataStore => DependencyService.Get<IDataStore<Restaurant>>() ?? new RestaurantDataStore();
 
         bool isBusy = false;
         public bool IsBusy

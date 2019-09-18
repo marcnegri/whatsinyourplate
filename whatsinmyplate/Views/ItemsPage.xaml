@@ -7,15 +7,13 @@
              x:Class="whatsinmyplate.Views.ItemsPage"
              xmlns:custom="clr-namespace:whatsinmyplate.Components;assembly=whatsinmyplate"
              Title="{Binding Title}"
-             x:Name="BrowseItemsPage">
+             x:Name="BrowseItemsPage" BackgroundColor="#f4f7f8">
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Add" Clicked="AddItem_Clicked" />
-    </ContentPage.ToolbarItems>
-
-    <StackLayout>
+    <StackLayout BackgroundColor="#f4f7f8">
+        <SearchBar BackgroundColor="#f4f7f8" Placeholder="Libanais, vegan, burgers..." />
         <ListView x:Name="ItemsListView"
                 SeparatorVisibility="None"
+                BackgroundColor="#f4f7f8"
                 ItemsSource="{Binding Items}"
                 VerticalOptions="FillAndExpand"
                 HasUnevenRows="true"

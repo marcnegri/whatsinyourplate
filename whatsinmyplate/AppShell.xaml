@@ -34,7 +34,14 @@
         <Tab Title="Restaurants" Icon="tab_feed.png">
             <ShellContent ContentTemplate="{DataTemplate local:ItemsPage}" />
         </Tab>
-        <Tab Title="About" Icon="tab_about.png">
+        <Tab Title="Map" Icon="tab_about.png">
+            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
+        </Tab>
+
+        <Tab Title="Enregistré" Icon="heart.png">
+            <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
+        </Tab>
+        <Tab Title="Profil" Icon="profil.png">
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
     </TabBar>

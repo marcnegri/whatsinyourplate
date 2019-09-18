@@ -12,18 +12,18 @@ namespace whatsinmyplate.ViewModels
 {
     public class ItemsViewModel : BaseViewModel
     {
-        public ObservableCollection<Item> Items { get; set; }
+        public ObservableCollection<Restaurant> Items { get; set; }
         public Command LoadItemsCommand { get; set; }
 
         public ItemsViewModel()
         {
             Title = "What's in my plate";
-            Items = new ObservableCollection<Item>();
+            Items = new ObservableCollection<Restaurant>();
             LoadItemsCommand = new Command(async () => await ExecuteLoadItemsCommand());
 
-            MessagingCenter.Subscribe<NewItemPage, Item>(this, "AddItem", async (obj, item) =>
+            MessagingCenter.Subscribe<NewItemPage, Restaurant>(this, "AddItem", async (obj, item) =>
             {
-                var newItem = item as Item;
+                var newItem = item as Restaurant;
                 Items.Add(newItem);
                 await DataStore.AddItemAsync(newItem);
             });
